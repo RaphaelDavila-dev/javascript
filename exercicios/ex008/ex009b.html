@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de pais</title>
+</head>
+<body>
+    <h1>Voce é estrangeiro ou não?</h1>
+    voce é: <input type="text" name="textn" id="textn">
+    <input type="button" value="verificar" onclick="determinar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function determinar(){
+            var n = document.getElementById('textn')
+            var res = document.querySelector('div#res')
+            if(n.value == 'brasileiro'){
+              res.innerHTML = `<p>Ben-vindo mano</p>`
+            } else {
+                res.innerHTML = `<p>SAI DAQUI GRINGO DO CRL!!!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
