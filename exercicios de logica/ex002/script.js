@@ -1,24 +1,35 @@
-function calcular(){
-    let a = document.getElementById('txtn1')
-    let b = document.getElementById('txtn2')
-    let c = document.getElementById('txtn3')
-    let res = document.getElementById('res')
-    let A = Number(a.value)
-    let B = Number(b.value)
-    let C = Number(c.value)
+function verificar() {
+ let n = document.getElementById('txtn')
+ let res = document.getElementById('res')
 
-    if(a.value.length == 0 || b.value.length == 0 || c.value.length == 0) {
-       res.innerHTML = `[ERRO] Por favor digite algum numero nas 3 caixas acima!`
+ if(n.value.trim() === "") {
+   res.innerHTML = `[ERRO] Por favor digite um numero`
+   res.style.color = 'red' 
+   return
 
-    } else { 
-        let soma = A + B
-        if (soma < C) {
-            res.innerHTML = `A soma entre ${A} e ${B} é menor que ${C}`
-        } else if(soma > C) {
-            res.innerHTML = `A soma entre ${A} e ${B} é maior que ${C}`
-        } else {
-            res.innerHTML = `A soma entre ${A} e ${B} é igual a ${C}`
-        }
-        
-    }
-}
+   }
+   
+   let N = Number(n.value)
+
+   if (N < 0){
+    res.innerHTML = `${N} é um numero negativo`
+    res.style.color = 'black'
+
+ } else if (N > 0) {
+    res.innerHTML = `${N} é um numero positivo`
+    res.style.color = 'black'
+
+ } else {
+    res.innerHTML = `${N} é igual a zero`
+    res.style.color = 'black'
+
+ } 
+
+ if(Math.abs(N % 2) === 0 ) {
+   res.innerHTML = `${res.innerHTML} e par!`
+
+ } else if (Math.abs(N % 2) === 1) {
+    res.innerHTML = `${res.innerHTML} e impar!`
+
+ }
+}  

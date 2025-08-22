@@ -8,10 +8,6 @@ header{
    text-align: center;
 }
 
-h1{
-
-}
-
 section{
    background-color: white;
    border-radius: 12px;
@@ -22,15 +18,11 @@ section{
 }
 
 div{
- text-align: center;
+ padding: 10px;
 }
 
 footer{
   color: white;
   text-align: center;
   font-style: italic;
-}
-
-p{
-
 }
