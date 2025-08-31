@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>verdadeiro ou falso</title>
+    <title>calculo de IMC</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>teste logico</h1>
+        <h1>calcule o peso ideal</h1>
     </header>
     <section>
         <div>
-        <p>teste 1: <input type="text" name="teste" id="txt1"></p>
-        <p> teste 2: <input type="text" name="teste2" id="txt2"></p>
-        <input type="button" value="verificar" onclick="verificar()">
+         <p>Peso: <input type="number" name="peso" id="txtp"></p>
+         <p>Altura: <input type="number" name="altura" id="txta"></p>
+         <input type="button" value="calcular" onclick="calcular()">
         </div>
 
         <div id="res">
-          aguardando 
+          aguardando os valores...
         </div>
     </section>
     <footer>
