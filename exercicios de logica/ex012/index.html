@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço de produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Valor final</h1>
+    </header>
+    <section>
+        <div>
+         <p>Valor: <input type="number" name="valor" id="txtv"></p>
+         <p>Dinheiro ou pix: <input type="radio" name="formadepagamento" id="txtav"></p>
+         <p>A vista no cartão: <input type="radio" name="formadepagamento" id="txtcv"></p>
+         <p>Parcelado em 2x: <input type="radio" name="formadepagamento" id="txt2x"></p>
+         <p>Parcelado em mais de 2x: <input type="radio" name="formadepagamento" id="txtm2x"></p>
+         <input type="button" value="processar" onclick="calcular()">
+        </div>
+
+        <div id="res">
+         selecione a forma de pagamento
+        </div>
+    </section>
+    <footer>
+        <p>&COPY; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
